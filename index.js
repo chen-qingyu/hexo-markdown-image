@@ -9,11 +9,11 @@ hexo.extend.filter.register('before_post_render', data => {
     data.content = data.content.replace(/!{1}\[([^\[\]]*)\]\((\S*)\s?(?:".*")?\)/g,
         function (match_str, label, path) {
             const parts = path.split('/');
-            if (parts.length == 3 && parts[0] == '.') {
+            if (parts.length === 3 && parts[0] === '.') {
                 parts.shift();
             }
-            if (parts.length == 2) {
-                if (parts[0] == title) {
+            if (parts.length === 2) {
+                if (parts[0] === title) {
                     return `![${label}](${parts[1]})`;
                 }
             }
