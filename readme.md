@@ -1,6 +1,6 @@
 # hexo-markdown-image
 
-You can see the image in both any Markdown editor and the Hexo server.
+A Hexo plugin that can help you view images in both any Markdown editor and Hexo server.
 
 ```bash
 npm install hexo-markdown-image
