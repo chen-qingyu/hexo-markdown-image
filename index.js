@@ -1,6 +1,9 @@
 'use strict';
 
+const front = require('hexo-front-matter');
+
 hexo.extend.filter.register('before_post_render', function (data) {
+    const title = front.parse(data.raw).title;
     data.content = data.content.replace(/!{1}\[([^\[\]]*)\]\((\S*)\s?(?:".*")?\)/g,
         function (match_str, label, path) {
             const parts = path.split('/');
@@ -8,7 +11,6 @@ hexo.extend.filter.register('before_post_render', function (data) {
                 parts.shift();
             }
             if (parts.length == 2) {
-                const title = data.content.match(/title\:\s.+/g)[0].replace('title: ', '');
                 if (parts[0] == title) {
                     return `![${label}](${parts[1]})`;
                 }
