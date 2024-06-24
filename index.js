@@ -2,7 +2,9 @@
 
 const front = require('hexo-front-matter');
 
-hexo.extend.filter.register('before_post_render', function (data) {
+hexo.extend.filter.register('before_post_render', data => {
+    if (data.layout !== 'post') return data
+
     const title = front.parse(data.raw).title;
     data.content = data.content.replace(/!{1}\[([^\[\]]*)\]\((\S*)\s?(?:".*")?\)/g,
         function (match_str, label, path) {
