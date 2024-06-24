@@ -1,6 +1,6 @@
 {
   "name": "hexo-markdown-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "You can see the image in both any Markdown editor and the Hexo server.",
   "main": "index.js",
   "scripts": {
