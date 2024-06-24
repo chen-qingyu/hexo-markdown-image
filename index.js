@@ -12,10 +12,8 @@ hexo.extend.filter.register('before_post_render', data => {
             if (parts.length === 3 && parts[0] === '.') {
                 parts.shift();
             }
-            if (parts.length === 2) {
-                if (parts[0] === title) {
-                    return `![${label}](${parts[1]})`;
-                }
+            if (parts.length === 2 && parts[0] === title) {
+                return `![${label}](${parts[1]})`;
             }
             return match_str;
         });
