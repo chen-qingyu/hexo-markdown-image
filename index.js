@@ -6,7 +6,7 @@ hexo.extend.filter.register('before_post_render', function (data) {
         function (match_str, label, path) {
             const parts = path.split('/');
             if (parts.length == 2) {
-                const title = content.match(/title\:\s.+/g)[0].replace('title: ', '');
+                const title = data.content.match(/title\:\s.+/g)[0].replace('title: ', '');
                 if (parts[0] == title) {
                         return `![${label}](${parts[1]})`;
                     }
