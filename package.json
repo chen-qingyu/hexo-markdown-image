@@ -1,0 +1,19 @@
+{
+  "name": "hexo-markdown-image",
+  "version": "1.0.0",
+  "description": "You can see the image in both any Markdown editor and the Hexo server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen-qingyu/hexo-markdown-image.git"
+  },
+  "author": "chen-qingyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen-qingyu/hexo-markdown-image/issues"
+  },
+  "homepage": "https://github.com/chen-qingyu/hexo-markdown-image#readme"
+}
