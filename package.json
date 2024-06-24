@@ -1,7 +1,7 @@
 {
   "name": "hexo-markdown-image",
   "version": "1.0.3",
-  "description": "You can see the image in both any Markdown editor and the Hexo server.",
+  "description": "A Hexo plugin that can help you view images in both any Markdown editor and Hexo server.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
