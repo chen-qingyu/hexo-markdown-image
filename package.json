@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/chen-qingyu/hexo-markdown-image.git"
   },
+  "keywords": [
+    "hexo",
+    "plugin",
+    "image",
+    "markdown",
+    "link"
+  ],
   "author": "chen-qingyu",
   "license": "ISC",
   "bugs": {
