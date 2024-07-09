@@ -16,6 +16,6 @@ Suppose the `_posts` directory tree looks like this:
 +---HelloWorld.md
 ```
 
-In the source code of the article, simply use `![](HelloWorld/1.png)` to insert images~
+In the source code of the article, simply use `![](HelloWorld/1.png)` ('HelloWorld' is post assets folder name instead of article title) to insert images~
 
 And the difference between this plugin and other image plugins is that it only replaces the image link of the current article, while keeping the other image links unchanged: `![](HelloWorld/1.png)` -> `![](1.png)`, `![](/images/hello.png)` unchanged.
