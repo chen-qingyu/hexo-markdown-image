@@ -1,6 +1,6 @@
 {
   "name": "hexo-markdown-image",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Hexo plugin that can help you view images in both any Markdown editor and Hexo server.",
   "main": "index.js",
   "scripts": {
